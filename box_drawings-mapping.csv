@@ -1,0 +1,257 @@
+     up,  right,   down,   left,   code, char, description
+       ,       ,       ,       ,       ,     ,
+       ,       ,       ,  light, U+2574,    ╴, box drawings light left
+       ,       ,       ,  heavy, U+2578,    ╸, box drawings heavy left
+       ,       ,       , double, U+2550,    ═, box drawings double horizontal
+       ,       ,  light,       , U+2577,    ╷, box drawings light down
+       ,       ,  light,  light, U+2510,    ┐, box drawings light down and left
+       ,       ,  light,  heavy, U+2511,    ┑, box drawings down light and left heavy
+       ,       ,  light, double, U+2555,    ╕, box drawings down single and left double
+       ,       ,  heavy,       , U+257b,    ╻, box drawings heavy down
+       ,       ,  heavy,  light, U+2512,    ┒, box drawings down heavy and left light
+       ,       ,  heavy,  heavy, U+2513,    ┓, box drawings heavy down and left
+       ,       ,  heavy, double, U+2513,    ┓, box drawings heavy down and left
+       ,       , double,       , U+2551,    ║, box drawings double vertical
+       ,       , double,  light, U+2556,    ╖, box drawings down double and left single
+       ,       , double,  heavy, U+2513,    ┓, box drawings heavy down and left
+       ,       , double, double, U+2557,    ╗, box drawings double down and left
+       ,  light,       ,       , U+2576,    ╶, box drawings light right
+       ,  light,       ,  light, U+2500,    ─, box drawings light horizontal
+       ,  light,       ,  heavy, U+257e,    ╾, box drawings heavy left and light right
+       ,  light,       , double, U+2500,    ─, box drawings light horizontal
+       ,  light,  light,       , U+250c,    ┌, box drawings light down and right
+       ,  light,  light,  light, U+252c,    ┬, box drawings light down and horizontal
+       ,  light,  light,  heavy, U+252d,    ┭, box drawings left heavy and right down light
+       ,  light,  light, double, U+252c,    ┬, box drawings light down and horizontal
+       ,  light,  heavy,       , U+250e,    ┎, box drawings down heavy and right light
+       ,  light,  heavy,  light, U+2530,    ┰, box drawings down heavy and horizontal light
+       ,  light,  heavy,  heavy, U+2531,    ┱, box drawings right light and left down heavy
+       ,  light,  heavy, double, U+252c,    ┬, box drawings light down and horizontal
+       ,  light, double,       , U+2553,    ╓, box drawings down double and right single
+       ,  light, double,  light, U+2565,    ╥, box drawings down double and horizontal single
+       ,  light, double,  heavy, U+252c,    ┬, box drawings light down and horizontal
+       ,  light, double, double, U+2566,    ╦, box drawings double down and horizontal
+       ,  heavy,       ,       , U+257a,    ╺, box drawings heavy right
+       ,  heavy,       ,  light, U+257c,    ╼, box drawings light left and heavy right
+       ,  heavy,       ,  heavy, U+2501,    ━, box drawings heavy horizontal
+       ,  heavy,       , double, U+2501,    ━, box drawings heavy horizontal
+       ,  heavy,  light,       , U+250d,    ┍, box drawings down light and right heavy
+       ,  heavy,  light,  light, U+252e,    ┮, box drawings right heavy and left down light
+       ,  heavy,  light,  heavy, U+252f,    ┯, box drawings down light and horizontal heavy
+       ,  heavy,  light, double, U+252c,    ┬, box drawings light down and horizontal
+       ,  heavy,  heavy,       , U+250f,    ┏, box drawings heavy down and right
+       ,  heavy,  heavy,  light, U+2532,    ┲, box drawings left light and right down heavy
+       ,  heavy,  heavy,  heavy, U+2533,    ┳, box drawings heavy down and horizontal
+       ,  heavy,  heavy, double, U+2533,    ┳, box drawings heavy down and horizontal
+       ,  heavy, double,       , U+250f,    ┏, box drawings heavy down and right
+       ,  heavy, double,  light, U+252c,    ┬, box drawings light down and horizontal
+       ,  heavy, double,  heavy, U+2533,    ┳, box drawings heavy down and horizontal
+       ,  heavy, double, double, U+2566,    ╦, box drawings double down and horizontal
+       , double,       ,       , U+2550,    ═, box drawings double horizontal
+       , double,       ,  light, U+2500,    ─, box drawings light horizontal
+       , double,       ,  heavy, U+2501,    ━, box drawings heavy horizontal
+       , double,       , double, U+2550,    ═, box drawings double horizontal
+       , double,  light,       , U+2552,    ╒, box drawings down single and right double
+       , double,  light,  light, U+252c,    ┬, box drawings light down and horizontal
+       , double,  light,  heavy, U+252c,    ┬, box drawings light down and horizontal
+       , double,  light, double, U+2564,    ╤, box drawings down single and horizontal double
+       , double,  heavy,       , U+250f,    ┏, box drawings heavy down and right
+       , double,  heavy,  light, U+252c,    ┬, box drawings light down and horizontal
+       , double,  heavy,  heavy, U+2533,    ┳, box drawings heavy down and horizontal
+       , double,  heavy, double, U+2566,    ╦, box drawings double down and horizontal
+       , double, double,       , U+2554,    ╔, box drawings double down and right
+       , double, double,  light, U+2566,    ╦, box drawings double down and horizontal
+       , double, double,  heavy, U+2566,    ╦, box drawings double down and horizontal
+       , double, double, double, U+2566,    ╦, box drawings double down and horizontal
+  light,       ,       ,       , U+2575,    ╵, box drawings light up
+  light,       ,       ,  light, U+2518,    ┘, box drawings light up and left
+  light,       ,       ,  heavy, U+2519,    ┙, box drawings up light and left heavy
+  light,       ,       , double, U+255b,    ╛, box drawings up single and left double
+  light,       ,  light,       , U+2502,    │, box drawings light vertical
+  light,       ,  light,  light, U+2524,    ┤, box drawings light vertical and left
+  light,       ,  light,  heavy, U+2525,    ┥, box drawings vertical light and left heavy
+  light,       ,  light, double, U+2561,    ╡, box drawings vertical single and left double
+  light,       ,  heavy,       , U+257d,    ╽, box drawings light up and heavy down
+  light,       ,  heavy,  light, U+2527,    ┧, box drawings down heavy and left up light
+  light,       ,  heavy,  heavy, U+252a,    ┪, box drawings up light and left down heavy
+  light,       ,  heavy, double, U+2524,    ┤, box drawings light vertical and left
+  light,       , double,       , U+2502,    │, box drawings light vertical
+  light,       , double,  light, U+2524,    ┤, box drawings light vertical and left
+  light,       , double,  heavy, U+2524,    ┤, box drawings light vertical and left
+  light,       , double, double, U+2563,    ╣, box drawings double vertical and left
+  light,  light,       ,       , U+2514,    └, box drawings light up and right
+  light,  light,       ,  light, U+2534,    ┴, box drawings light up and horizontal
+  light,  light,       ,  heavy, U+2535,    ┵, box drawings left heavy and right up light
+  light,  light,       , double, U+2534,    ┴, box drawings light up and horizontal
+  light,  light,  light,       , U+251c,    ├, box drawings light vertical and right
+  light,  light,  light,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  light,  light,  heavy, U+253d,    ┽, box drawings left heavy and right vertical light
+  light,  light,  light, double, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  light,  heavy,       , U+251f,    ┟, box drawings down heavy and right up light
+  light,  light,  heavy,  light, U+2541,    ╁, box drawings down heavy and up horizontal light
+  light,  light,  heavy,  heavy, U+2545,    ╅, box drawings left down heavy and right up light
+  light,  light,  heavy, double, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  light, double,       , U+251c,    ├, box drawings light vertical and right
+  light,  light, double,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  light, double,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  light, double, double, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  heavy,       ,       , U+2515,    ┕, box drawings up light and right heavy
+  light,  heavy,       ,  light, U+2536,    ┶, box drawings right heavy and left up light
+  light,  heavy,       ,  heavy, U+2537,    ┷, box drawings up light and horizontal heavy
+  light,  heavy,       , double, U+2534,    ┴, box drawings light up and horizontal
+  light,  heavy,  light,       , U+251d,    ┝, box drawings vertical light and right heavy
+  light,  heavy,  light,  light, U+253e,    ┾, box drawings right heavy and left vertical light
+  light,  heavy,  light,  heavy, U+253f,    ┿, box drawings vertical light and horizontal heavy
+  light,  heavy,  light, double, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  heavy,  heavy,       , U+2522,    ┢, box drawings up light and right down heavy
+  light,  heavy,  heavy,  light, U+2546,    ╆, box drawings right down heavy and left up light
+  light,  heavy,  heavy,  heavy, U+2548,    ╈, box drawings up light and down horizontal heavy
+  light,  heavy,  heavy, double, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  heavy, double,       , U+251c,    ├, box drawings light vertical and right
+  light,  heavy, double,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  heavy, double,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+  light,  heavy, double, double, U+253c,    ┼, box drawings light vertical and horizontal
+  light, double,       ,       , U+2558,    ╘, box drawings up single and right double
+  light, double,       ,  light, U+2534,    ┴, box drawings light up and horizontal
+  light, double,       ,  heavy, U+2534,    ┴, box drawings light up and horizontal
+  light, double,       , double, U+2567,    ╧, box drawings up single and horizontal double
+  light, double,  light,       , U+255e,    ╞, box drawings vertical single and right double
+  light, double,  light,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  light, double,  light,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+  light, double,  light, double, U+256a,    ╪, box drawings vertical single and horizontal double
+  light, double,  heavy,       , U+251c,    ├, box drawings light vertical and right
+  light, double,  heavy,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  light, double,  heavy,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+  light, double,  heavy, double, U+253c,    ┼, box drawings light vertical and horizontal
+  light, double, double,       , U+2560,    ╠, box drawings double vertical and right
+  light, double, double,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  light, double, double,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+  light, double, double, double, U+256c,    ╬, box drawings double vertical and horizontal
+  heavy,       ,       ,       , U+2579,    ╹, box drawings heavy up
+  heavy,       ,       ,  light, U+251a,    ┚, box drawings up heavy and left light
+  heavy,       ,       ,  heavy, U+251b,    ┛, box drawings heavy up and left
+  heavy,       ,       , double, U+251b,    ┛, box drawings heavy up and left
+  heavy,       ,  light,       , U+257f,    ╿, box drawings heavy up and light down
+  heavy,       ,  light,  light, U+2526,    ┦, box drawings up heavy and left down light
+  heavy,       ,  light,  heavy, U+2529,    ┩, box drawings down light and left up heavy
+  heavy,       ,  light, double, U+2524,    ┤, box drawings light vertical and left
+  heavy,       ,  heavy,       , U+2503,    ┃, box drawings heavy vertical
+  heavy,       ,  heavy,  light, U+2528,    ┨, box drawings vertical heavy and left light
+  heavy,       ,  heavy,  heavy, U+252b,    ┫, box drawings heavy vertical and left
+  heavy,       ,  heavy, double, U+252b,    ┫, box drawings heavy vertical and left
+  heavy,       , double,       , U+2503,    ┃, box drawings heavy vertical
+  heavy,       , double,  light, U+2524,    ┤, box drawings light vertical and left
+  heavy,       , double,  heavy, U+252b,    ┫, box drawings heavy vertical and left
+  heavy,       , double, double, U+2563,    ╣, box drawings double vertical and left
+  heavy,  light,       ,       , U+2516,    ┖, box drawings up heavy and right light
+  heavy,  light,       ,  light, U+2538,    ┸, box drawings up heavy and horizontal light
+  heavy,  light,       ,  heavy, U+2539,    ┹, box drawings right light and left up heavy
+  heavy,  light,       , double, U+2534,    ┴, box drawings light up and horizontal
+  heavy,  light,  light,       , U+251e,    ┞, box drawings up heavy and right down light
+  heavy,  light,  light,  light, U+2540,    ╀, box drawings up heavy and down horizontal light
+  heavy,  light,  light,  heavy, U+2543,    ╃, box drawings left up heavy and right down light
+  heavy,  light,  light, double, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy,  light,  heavy,       , U+2520,    ┠, box drawings vertical heavy and right light
+  heavy,  light,  heavy,  light, U+2542,    ╂, box drawings vertical heavy and horizontal light
+  heavy,  light,  heavy,  heavy, U+2549,    ╉, box drawings right light and left vertical heavy
+  heavy,  light,  heavy, double, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy,  light, double,       , U+251c,    ├, box drawings light vertical and right
+  heavy,  light, double,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy,  light, double,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy,  light, double, double, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy,  heavy,       ,       , U+2517,    ┗, box drawings heavy up and right
+  heavy,  heavy,       ,  light, U+253a,    ┺, box drawings left light and right up heavy
+  heavy,  heavy,       ,  heavy, U+253b,    ┻, box drawings heavy up and horizontal
+  heavy,  heavy,       , double, U+253b,    ┻, box drawings heavy up and horizontal
+  heavy,  heavy,  light,       , U+2521,    ┡, box drawings down light and right up heavy
+  heavy,  heavy,  light,  light, U+2544,    ╄, box drawings right up heavy and left down light
+  heavy,  heavy,  light,  heavy, U+2547,    ╇, box drawings down light and up horizontal heavy
+  heavy,  heavy,  light, double, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy,  heavy,  heavy,       , U+2523,    ┣, box drawings heavy vertical and right
+  heavy,  heavy,  heavy,  light, U+254a,    ╊, box drawings left light and right vertical heavy
+  heavy,  heavy,  heavy,  heavy, U+254b,    ╋, box drawings heavy vertical and horizontal
+  heavy,  heavy,  heavy, double, U+254b,    ╋, box drawings heavy vertical and horizontal
+  heavy,  heavy, double,       , U+2523,    ┣, box drawings heavy vertical and right
+  heavy,  heavy, double,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy,  heavy, double,  heavy, U+254b,    ╋, box drawings heavy vertical and horizontal
+  heavy,  heavy, double, double, U+254b,    ╋, box drawings heavy vertical and horizontal
+  heavy, double,       ,       , U+2517,    ┗, box drawings heavy up and right
+  heavy, double,       ,  light, U+2534,    ┴, box drawings light up and horizontal
+  heavy, double,       ,  heavy, U+253b,    ┻, box drawings heavy up and horizontal
+  heavy, double,       , double, U+2569,    ╩, box drawings double up and horizontal
+  heavy, double,  light,       , U+251c,    ├, box drawings light vertical and right
+  heavy, double,  light,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy, double,  light,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy, double,  light, double, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy, double,  heavy,       , U+2523,    ┣, box drawings heavy vertical and right
+  heavy, double,  heavy,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy, double,  heavy,  heavy, U+254b,    ╋, box drawings heavy vertical and horizontal
+  heavy, double,  heavy, double, U+254b,    ╋, box drawings heavy vertical and horizontal
+  heavy, double, double,       , U+2560,    ╠, box drawings double vertical and right
+  heavy, double, double,  light, U+253c,    ┼, box drawings light vertical and horizontal
+  heavy, double, double,  heavy, U+254b,    ╋, box drawings heavy vertical and horizontal
+  heavy, double, double, double, U+256c,    ╬, box drawings double vertical and horizontal
+ double,       ,       ,       , U+2551,    ║, box drawings double vertical
+ double,       ,       ,  light, U+255c,    ╜, box drawings up double and left single
+ double,       ,       ,  heavy, U+251b,    ┛, box drawings heavy up and left
+ double,       ,       , double, U+255d,    ╝, box drawings double up and left
+ double,       ,  light,       , U+2502,    │, box drawings light vertical
+ double,       ,  light,  light, U+2524,    ┤, box drawings light vertical and left
+ double,       ,  light,  heavy, U+2524,    ┤, box drawings light vertical and left
+ double,       ,  light, double, U+2563,    ╣, box drawings double vertical and left
+ double,       ,  heavy,       , U+2503,    ┃, box drawings heavy vertical
+ double,       ,  heavy,  light, U+2524,    ┤, box drawings light vertical and left
+ double,       ,  heavy,  heavy, U+252b,    ┫, box drawings heavy vertical and left
+ double,       ,  heavy, double, U+2563,    ╣, box drawings double vertical and left
+ double,       , double,       , U+2551,    ║, box drawings double vertical
+ double,       , double,  light, U+2562,    ╢, box drawings vertical double and left single
+ double,       , double,  heavy, U+2563,    ╣, box drawings double vertical and left
+ double,       , double, double, U+2563,    ╣, box drawings double vertical and left
+ double,  light,       ,       , U+2559,    ╙, box drawings up double and right single
+ double,  light,       ,  light, U+2568,    ╨, box drawings up double and horizontal single
+ double,  light,       ,  heavy, U+2534,    ┴, box drawings light up and horizontal
+ double,  light,       , double, U+2569,    ╩, box drawings double up and horizontal
+ double,  light,  light,       , U+251c,    ├, box drawings light vertical and right
+ double,  light,  light,  light, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  light,  light,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  light,  light, double, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  light,  heavy,       , U+251c,    ├, box drawings light vertical and right
+ double,  light,  heavy,  light, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  light,  heavy,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  light,  heavy, double, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  light, double,       , U+255f,    ╟, box drawings vertical double and right single
+ double,  light, double,  light, U+256b,    ╫, box drawings vertical double and horizontal single
+ double,  light, double,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  light, double, double, U+256c,    ╬, box drawings double vertical and horizontal
+ double,  heavy,       ,       , U+2517,    ┗, box drawings heavy up and right
+ double,  heavy,       ,  light, U+2534,    ┴, box drawings light up and horizontal
+ double,  heavy,       ,  heavy, U+253b,    ┻, box drawings heavy up and horizontal
+ double,  heavy,       , double, U+2569,    ╩, box drawings double up and horizontal
+ double,  heavy,  light,       , U+251c,    ├, box drawings light vertical and right
+ double,  heavy,  light,  light, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  heavy,  light,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  heavy,  light, double, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  heavy,  heavy,       , U+2523,    ┣, box drawings heavy vertical and right
+ double,  heavy,  heavy,  light, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  heavy,  heavy,  heavy, U+254b,    ╋, box drawings heavy vertical and horizontal
+ double,  heavy,  heavy, double, U+254b,    ╋, box drawings heavy vertical and horizontal
+ double,  heavy, double,       , U+2560,    ╠, box drawings double vertical and right
+ double,  heavy, double,  light, U+253c,    ┼, box drawings light vertical and horizontal
+ double,  heavy, double,  heavy, U+254b,    ╋, box drawings heavy vertical and horizontal
+ double,  heavy, double, double, U+256c,    ╬, box drawings double vertical and horizontal
+ double, double,       ,       , U+255a,    ╚, box drawings double up and right
+ double, double,       ,  light, U+2569,    ╩, box drawings double up and horizontal
+ double, double,       ,  heavy, U+2569,    ╩, box drawings double up and horizontal
+ double, double,       , double, U+2569,    ╩, box drawings double up and horizontal
+ double, double,  light,       , U+2560,    ╠, box drawings double vertical and right
+ double, double,  light,  light, U+253c,    ┼, box drawings light vertical and horizontal
+ double, double,  light,  heavy, U+253c,    ┼, box drawings light vertical and horizontal
+ double, double,  light, double, U+256c,    ╬, box drawings double vertical and horizontal
+ double, double,  heavy,       , U+2560,    ╠, box drawings double vertical and right
+ double, double,  heavy,  light, U+253c,    ┼, box drawings light vertical and horizontal
+ double, double,  heavy,  heavy, U+254b,    ╋, box drawings heavy vertical and horizontal
+ double, double,  heavy, double, U+256c,    ╬, box drawings double vertical and horizontal
+ double, double, double,       , U+2560,    ╠, box drawings double vertical and right
+ double, double, double,  light, U+256c,    ╬, box drawings double vertical and horizontal
+ double, double, double,  heavy, U+256c,    ╬, box drawings double vertical and horizontal
+ double, double, double, double, U+256c,    ╬, box drawings double vertical and horizontal
