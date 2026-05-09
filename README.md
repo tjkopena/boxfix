@@ -10,67 +10,107 @@ text READMEs and other documentation using regular trivially
 keyboard-accessible characters `-|+#=<>^vV` but making them pretty by
 transforming the diagrams to Unicode drawing characters.
 
+![Screenshot from a terminal](terminal-screenshot.png)
+
 
 ## Simple Examples
 
+_**N.B.:** If the transformed diagrams below do not line up properly
+it's almost certainly a font issue._
+* _If columns are misaligned following an arrow, your font has given
+  them a different width than the other characters.  Per Unicode
+  standards they do not have prescribed widths, leaving them free for
+  font designers to vary.  Font designers inexplicably do so often,
+  even in ostensibly fixed-width/monospace fonts.  There's no good way
+  to resolve this across all fonts and viewers short of bludgeoning
+  font designers into order.  The arrow codepoints used have been
+  chosen to look good in a number of common terminal fonts but are
+  known to have issues in some common web browser & site styles._
+* _If there are gaps between rows your viewer is applying a line
+  height greater than the font itself.  Again this holds in some
+  common web browser & site styles but is a rare issue for terminals._
+
+**BoxFix**
 ```
-----------          ┌────────┐
-| BoxFix |  ->  ─▶  │ BoxFix │
-----------          └────────┘
+                    ----------          ┌────────┐
+                    | BoxFix |  ->  ─▶  │ BoxFix │
+                    ----------          └────────┘
 ```
 
+**TCP/IP**
 ```
-+-----------------+          ┌─────────────────┐
-|   Application   |          │   Application   │
--------------------          ├─────────────────┤
-| [ TCP ] [ UDP ] |          │ [ TCP ] [ UDP ] │
-|        IP       |  ->  ─▶  │        IP       │
--------------------          ├─────────────────┤
-|  Device Driver  |          │  Device Driver  │
-+-----------------+          └─────────────────┘
-```
-
-```
-   +                ╷
-  +-+              ┌┴┐
-  | |              │ │
-|-----|          ┌─┴─┴─┐
-|     |          │     │
-|  +  |          │  ◻  │
-|     |  ->  ─▶  │     │
-| + + |          │ ◻ ◻ │
-|     |          │     │
-| +-+ |          │ ┌─┐ │
-| | | |          │ │ │ │
--------          └─┴─┴─┘
+           +-----------------+          ┌─────────────────┐
+           |   Application   |          │   Application   │
+           -------------------          ├─────────────────┤
+           | [ TCP ] [ UDP ] |          │ [ TCP ] [ UDP ] │
+           |        IP       |  ->  ─▶  │        IP       │
+           -------------------          ├─────────────────┤
+           |  Device Driver  |          │  Device Driver  │
+           +-----------------+          └─────────────────┘
 ```
 
+**Tower**
 ```
-------------+ -------------+          ┌───────────┐ ┌────────────┐
-| Left-Most |-| Right-Most |  ->  ─▶  │ Left-Most ├─┤ Right-Most │
-+------------ +-------------          └───────────┘ └────────────┘
-```
-
-```
-  Freedom                  Freedom
-     ^                        ▲
-     |                        │
-  +--+ Twirling  ->  ─▶    ┌──┘ Twirling
-  |                        │
-  V                        ▼
-Always                   Always
-```
-
-```
-==================          ╒════════════════╕
-| Fancy BoxFix 1 |  ->  ─▶  │ Fancy BoxFix 1 │
-##################          ┕━━━━━━━━━━━━━━━━┙
+                          +                ╷
+                         +-+              ┌┴┐
+                         | |              │ │
+                       |-----|          ┌─┴─┴─┐
+                       |     |          │     │
+                       |  +  |          │  ◻  │
+                       |     |  ->  ─▶  │     │
+                       | + + |          │ ◻ ◻ │
+                       |     |          │     │
+                       | +-+ |          │ ┌─┐ │
+                       | | | |          │ │ │ │
+                       -------          └─┴─┴─┘
 ```
 
+**Left/Right-Most**
 ```
-==================          ╒════════════════╕
-| Fancy BoxFix 2 |  ->  ─▶  │ Fancy BoxFix 2 │
-|################|          ┕━━━━━━━━━━━━━━━━┙
+  ------------+ -------------+          ┌───────────┐ ┌────────────┐
+  | Left-Most |-| Right-Most |  ->  ─▶  │ Left-Most ├─┤ Right-Most │
+  +------------ +-------------          └───────────┘ └────────────┘
+```
+
+**Twirling, Twirling Toward Freedom**
+```
+                  Freedom                  Freedom
+                     ^                        ▲
+                     |                        │
+                  +--+ Twirling  ->  ─▶    ┌──┘ Twirling
+                  |                        │
+                  V                        ▼
+                Always                   Always
+```
+
+*8Fancy BoxFix 1**
+```
+            ==================          ╒════════════════╕
+            | Fancy BoxFix 1 |  ->  ─▶  │ Fancy BoxFix 1 │
+            ##################          ┕━━━━━━━━━━━━━━━━┙
+```
+
+**Fancy BoxFix 2**
+```
+            ==================          ╒════════════════╕
+            | Fancy BoxFix 2 |  ->  ─▶  │ Fancy BoxFix 2 │
+            |################|          ┕━━━━━━━━━━━━━━━━┙
+```
+
+**Fancy BoxFix 3**
+```
+                    ---====---          ┌──════──┐
+                    | BoxFix |  ->  ─▶  │ BoxFix │
+                    --##--##--          └─━━──━━─┘
+```
+
+**BoxFix Evolution**
+```
+    ----------      ┌────────┐      ┌──####──┐        ┌──━━━━──┐
+    | BoxFix |  ─▶  │ BoxFix │  ->  │ BoxFix ├-+  ╶▶  │ BoxFix ├─┐
+    ----------      └────────┘      └────────┘ |      └──────┬─┘ │
+                                           |   =             │   ║
+                                           ---==             └──═╝
 ```
 
 ## Usage
@@ -180,15 +220,15 @@ Step I. Iterate _cursor_ over each character in the region:
          is taken to be the base style of _cursor_.
 
       c. Otherwise the tuple component is taken as the tuple component
-         of the adjacent character in the opposite direction as
-         specified in
+         of the adjacent character in the opposite direction as in
          [box_drawings-palette.csv](box_drawings-palette.csv). E.g.,
          for a _cursor_ with a U+252a ┪ box drawings up light and left
-         down heavy adjacent upward, the lookup key up component for
+         down heavy adjacent upward, the lookup key's up component for
          _cursor_ would be _heavy_, the down component for the U+252a
          ┪.  If a U+252a ┪ were adjacent downward, the lookup key down
-         component for _cursor_ would be _light_, the up component for
-         U+252a ┪.  If the adjacent character has a nil component in
+         component would be _light_, the up component for U+252a ┪.
+
+         If the adjacent character has a nil component in
          the direction of _cursor_ then the lookup component for
          _cursor_ is taken as the adjacent character's base style.
          The latter is considered a _fallback_.
@@ -201,6 +241,10 @@ Step I. Iterate _cursor_ over each character in the region:
       b. Otherwise the replacement is the character matching the
          lookup key in the table defined by
          [box_drawings-mapping.csv](box_drawings-mapping.csv).
+
+         If there is no such entry in the table, set all of the non-nil
+         components of the lookup key to the base style of _cursor_ and
+         take the matching character in the table as the replacement.
 
    5. If the replacement differs from _cursor_, it is classified as
       either a non-fallback replacement (no fallback was used in step

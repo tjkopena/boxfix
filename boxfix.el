@@ -242,8 +242,11 @@ Respects `rectangle-mark-mode' when active."
       ;; Uses deferred processing with fallback deferral: characters
       ;; whose key requires a nil-fallback are deferred until all
       ;; non-fallback characters stabilize, avoiding oscillation from
-      ;; order-dependent fallback guesses.
-      (let ((progress t))
+      ;; order-dependent fallback guesses.  Cycle detection stops
+      ;; processing if the buffer state repeats.
+      (let ((progress t)
+            (seen-states (make-hash-table :test 'equal)))
+        (puthash (buffer-string) t seen-states)
         (while progress
           (setq progress nil)
           (let (non-fallback-repls fallback-repls)
@@ -271,6 +274,29 @@ Respects `rectangle-mark-mode' when active."
                             (if (= idx 0)
                                 (cdr (assq base boxfix--box-chars))
                               (aref boxfix--mapping-vector idx))))
+                      ;; Fallback per spec II.4b: if the result is a
+                      ;; same-axis transition character or has lost all
+                      ;; directional components of cursor's base style,
+                      ;; treat as "no entry" and re-lookup with all
+                      ;; non-nil components set to cursor's base style.
+                      (when (and new-char
+                                 (or (memq new-char '(?╼ ?╽ ?╾ ?╿))
+                                     (let ((new-base (gethash new-char boxfix--char-style 0)))
+                                       (and (/= new-base base)
+                                            (let ((nd (gethash new-char boxfix--char-directions)))
+                                              (and nd
+                                                   (/= (aref nd 0) base)
+                                                   (/= (aref nd 1) base)
+                                                   (/= (aref nd 2) base)
+                                                   (/= (aref nd 3) base)))))))
+                        (let* ((fb-idx (+ (* (if (> up-s 0) base 0) 64)
+                                          (* (if (> rt-s 0) base 0) 16)
+                                          (* (if (> dn-s 0) base 0) 4)
+                                          (if (> lt-s 0) base 0))))
+                          (setq new-char
+                                (if (= fb-idx 0)
+                                    (cdr (assq base boxfix--box-chars))
+                                  (aref boxfix--mapping-vector fb-idx)))))
                       (when (and new-char (/= ch new-char))
                         (if used-fallback
                             (push (cons pos new-char) fallback-repls)
@@ -279,11 +305,15 @@ Respects `rectangle-mark-mode' when active."
             ;; Prefer non-fallback replacements; use fallback only when stuck.
             (let ((repls (or non-fallback-repls fallback-repls)))
               (when repls
-                (setq progress t)
                 (dolist (r repls)
                   (goto-char (car r))
                   (delete-char 1)
-                  (insert-char (cdr r)))))))))))
+                  (insert-char (cdr r)))
+                ;; Cycle detection: stop if this state was seen before.
+                (let ((state (buffer-string)))
+                  (unless (gethash state seen-states)
+                    (puthash state t seen-states)
+                    (setq progress t)))))))))))
 
 (provide 'boxfix)
 ;;; boxfix.el ends here

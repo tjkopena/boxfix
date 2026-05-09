@@ -95,6 +95,21 @@
  "╒════════════════╕\n│ Fancy BoxFix 2 │\n┕━━━━━━━━━━━━━━━━┙"
  "Example: Fancy BoxFix 2")
 
+(boxfix-test--run
+ "---====---\n| BoxFix |\n--##--##--"
+ "┌──════──┐\n│ BoxFix │\n└─━━──━━─┘"
+ "Mixed weight boundaries")
+
+(boxfix-test--run
+ "    ----------      ┌────────┐      ┌──####──┐        ┌──━━━━──┐       \n    | BoxFix |  ─▶  │ BoxFix │  ->  │ BoxFix │-+  ╶▶  │ BoxFix ├─┐     \n    ----------      └────────┘      └────────┘ |      └──────┬─┘ │     \n                                           |   |             │   │     \n                                           |---+             └───┘     "
+ "    ┌────────┐      ┌────────┐      ┌──━━━━──┐        ┌──━━━━──┐       \n    │ BoxFix │  ╶▶  │ BoxFix │  ╶▶  │ BoxFix ├─┐  ╶▶  │ BoxFix ├─┐     \n    └────────┘      └────────┘      └──────┬─┘ │      └──────┬─┘ │     \n                                           │   │             │   │     \n                                           └───┘             └───┘     "
+ "Mixed Unicode and ASCII with weight boundaries")
+
+(boxfix-test--run
+ "    ----------      ┌────────┐      ┌──####──┐        ┌──━━━━──┐       \n    | BoxFix |  ─▶  │ BoxFix │  ->  │ BoxFix ├-+  ╶▶  │ BoxFix ├─┐     \n    ----------      └────────┘      └────────┘ |      └──────┬─┘ │     \n                                           |   =             │   ║     \n                                           ---==             └──═╝     "
+ "    ┌────────┐      ┌────────┐      ┌──━━━━──┐        ┌──━━━━──┐       \n    │ BoxFix │  ╶▶  │ BoxFix │  ╶▶  │ BoxFix ├─┐  ╶▶  │ BoxFix ├─┐     \n    └────────┘      └────────┘      └──────┬─┘ │      └──────┬─┘ │     \n                                           │   ║             │   ║     \n                                           └──═╝             └──═╝     "
+ "Style fallback for double vertical")
+
 ;; --- Summary ---
 
 (message "\n%d passed, %d failed"
