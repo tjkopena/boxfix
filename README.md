@@ -65,11 +65,13 @@ it's almost certainly a font issue._
                        -------          └─┴─┴─┘
 ```
 
-**Left/Right-Most**
+**BoxFix Evolution**
 ```
-  ------------+ -------------+          ┌───────────┐ ┌────────────┐
-  | Left-Most |-| Right-Most |  ->  ─▶  │ Left-Most ├─┤ Right-Most │
-  +------------ +-------------          └───────────┘ └────────────┘
+    ----------      ┌────────┐      ┌──####──┐        ┌──━━━━──┐
+    | BoxFix |  ─▶  │ BoxFix │  ->  │ BoxFix ├-+  ╶▶  │ BoxFix ├─┐
+    ----------      └────────┘      └────────┘ |      └──────┬─┘ │
+                                           |   =             │   ║
+                                           ---==             └──═╝
 ```
 
 **Twirling, Twirling Toward Freedom**
@@ -83,7 +85,14 @@ it's almost certainly a font issue._
                 Always                   Always
 ```
 
-*8Fancy BoxFix 1**
+**Left/Right-Most**
+```
+  ------------+ -------------+          ┌───────────┐ ┌────────────┐
+  | Left-Most |-| Right-Most |  ->  ─▶  │ Left-Most ├─┤ Right-Most │
+  +------------ +-------------          └───────────┘ └────────────┘
+```
+
+**Fancy BoxFix 1**
 ```
             ==================          ╒════════════════╕
             | Fancy BoxFix 1 |  ->  ─▶  │ Fancy BoxFix 1 │
@@ -104,14 +113,6 @@ it's almost certainly a font issue._
                     --##--##--          └─━━──━━─┘
 ```
 
-**BoxFix Evolution**
-```
-    ----------      ┌────────┐      ┌──####──┐        ┌──━━━━──┐
-    | BoxFix |  ─▶  │ BoxFix │  ->  │ BoxFix ├-+  ╶▶  │ BoxFix ├─┐
-    ----------      └────────┘      └────────┘ |      └──────┬─┘ │
-                                           |   =             │   ║
-                                           ---==             └──═╝
-```
 
 ## Usage
 
